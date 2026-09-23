@@ -23,11 +23,13 @@ pipeline {
         }
         stage('Test')
         {
-            
-            sh '''
-            echo Testing started
-            npm test
-            '''
+            steps 
+            {
+                sh '''
+                echo Testing started
+                npm test
+               '''
+            }
         }
         
     }
