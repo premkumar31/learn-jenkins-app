@@ -21,6 +21,14 @@ pipeline {
                  '''
             }
         }
+        stage('Test')
+        {
+            
+            sh '''
+            echo Testing started
+            npm test
+            '''
+        }
         
     }
 }
